@@ -55,9 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BigPlaneSW.cs" />
     <Compile Include="Manifest.cs" />
+    <Compile Include="MediumPlaneSW.cs" />
     <Compile Include="Passengers.cs" />
-    <Compile Include="SmallPlane.cs" />
+    <Compile Include="SmallPlaneNE.cs" />
+    <Compile Include="SmallPlaneSW.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,14 +70,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BigPlane.cs" />
+    <Compile Include="BigPlaneNE.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MediumPlane.cs" />
+    <Compile Include="MediumPlaneNE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

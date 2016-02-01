@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace Airline
 {
-    public class Airplane
+    public class SmallPlaneSW : Airplane
     {
-       public int flightNum;
-       public int seat;
-       public int range;
-       public int flightTime;
-       public string origin;
-       public bool maintenance;
-
-        public Airplane(int flightNum, int seat, int range, int flightTime, string origin, bool maintenance)
+        int firstClass;
+        public SmallPlaneSW(int flightNum, int seat, int range, int flightTime, string origin, bool maintenance) : base(flightNum, seat, range, flightTime, origin, maintenance)
         {
             this.flightNum = flightNum;
             this.seat = seat;
