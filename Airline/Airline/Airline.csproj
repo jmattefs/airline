@@ -59,8 +59,10 @@
     <Compile Include="Manifest.cs" />
     <Compile Include="MediumPlaneSW.cs" />
     <Compile Include="Passengers.cs" />
+    <Compile Include="Read.cs" />
     <Compile Include="SmallPlaneNE.cs" />
     <Compile Include="SmallPlaneSW.cs" />
+    <Compile Include="Write.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
