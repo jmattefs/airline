@@ -24,7 +24,7 @@ namespace Airline
 
         public string genFirstName()
         {
-            string[] firstNames = new string[] { "John", "Mary", "Bill", "Sally", "Bob", "Erin", "Steve", "Molly", "Charles", "Carly", "Tom", "Melanie", "Paul", "Victoria", "George", "Elizabeth", "Peter", "Pamela", "Roger", "Joan", "Frank", "Denise", "Dennis", "Angela", "Michael", "Jan", "Dwight", "Kathleen", "Antwan", "Megan", "Aaron", "Jordan" };
+            string[] firstNames = new string[] { "John", "Mary", "Bill", "Sally", "Bob", "Erin", "Steve", "Molly", "Charles", "Carly", "Tom", "Melanie", "Paul", "Victoria", "George", "Elizabeth", "Peter", "Pamela", "Roger", "Joan", "Frank", "Denise", "Dennis", "Angela", "Michael", "Jan", "Dwight", "Kathleen", "Antwan", "Megan", "Aaron", "Jordan", "Bruce", "Diane", "OJ", "Alice", "Chad", "Sue", "Clark", "Cindy", "Cameron", "Hannah", "Jack", "Lena", "Sam", "Deborah"  };
             string name1;
             name1 = firstNames[rnd.Next(0, firstNames.Length)];
             return name1;
@@ -32,7 +32,7 @@ namespace Airline
         }
         public string genLastName()
         {
-            string[] lastNames = new string[] { "Smith", "Jones", "Wilson", "Thompson", "Nelson", "Adams", "Rodgers", "Jackson", "Coleman", "Harrison", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Moore", "Taylor", "Anderson", "Thomas", "White", "Harris", "Freeman", "Gonzalez"};
+            string[] lastNames = new string[] { "Smith", "Jones", "Wilson", "Thompson", "Nelson", "Adams", "Rodgers", "Jackson", "Coleman", "Harrison", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Moore", "Taylor", "Anderson", "Thomas", "White", "Harris", "Freeman", "Gonzalez", "Robinson", "Simpson", "Black", "West", "Wayne", "Kent", "Allen", "Jefferson", "Washington", "Ochocinco", "Rooney", "McCarthy", "Kuhn", "James", "Bryant", "Pitt", "Cruise", "McQueen", "Stewart", "Grant", "Walker", "Newton" };
             string name2;
             name2 = lastNames[rnd.Next(0, lastNames.Length)];
             return name2;
@@ -81,10 +81,7 @@ namespace Airline
         {
             string name = genFullName();
             string bday = genBday();
-            string info;
-            info = "Name/Date of Birth: " + name + "; " + bday;
-            Console.WriteLine(info);
-            return info;
+            return String.Format("{0, -20} | {1, 10}", "|" + name, bday + "|");
         }
     }
 }

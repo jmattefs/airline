@@ -15,5 +15,15 @@ namespace Airline
             File.AppendAllText(@"c:\users\joseph\desktop\manifest.txt", one + Environment.NewLine);
             //place holder variables from rps
         }
+        public void clearManifest()
+        {
+            File.WriteAllText(@"c:\manifest.txt", string.Empty);
+        }
+        public void manifestHeader()
+        {
+            string header;
+            header = "|-------Name---------|---DOB---|";
+            File.WriteAllText(@"c:\manifest.txt", header + Environment.NewLine);
+        }
     }
 }
