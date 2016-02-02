@@ -25,7 +25,7 @@ namespace Airline
         public int SmallRevenue()
         {
             int sales = SmallSales();
-            int ticketPrice = 100;
+            int ticketPrice = 75;
             int revenue = sales * ticketPrice;
             return revenue;
         }
@@ -80,7 +80,7 @@ namespace Airline
         public int LargeRev1st()
         {
             int sales = LargeSales1st();
-            int ticketPrice = 200;
+            int ticketPrice = 250;
             int revenue = sales * ticketPrice;
             return revenue;
         }
@@ -95,7 +95,7 @@ namespace Airline
         public int LargeRevCoach()
         {
             int sales = LargeSalesCoach();
-            int ticketPrice = 100;
+            int ticketPrice = 125;
             int revenue = sales * ticketPrice;
             return revenue;
         }
