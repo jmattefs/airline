@@ -9,14 +9,22 @@ namespace Airline
     class MediumPlaneSW : Airplane
     {
         int firstClass;
-        public MediumPlaneSW(int flightNum, int seat, int range, int flightTime, string origin, bool maintenance) : base(flightNum, seat, range, flightTime, origin, maintenance)
+
+        public MediumPlaneSW(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance,int firstClass) : base(flightNum, seat, range, flightTime, origin, destination, maintenance)
         {
-            this.flightNum = flightNum;
-            this.seat = seat;
-            this.range = range;
-            this.flightTime = flightTime;
-            this.origin = origin;
-            this.maintenance = maintenance;
+            this.flightNum = 101;
+            this.seat = 40;
+            this.range = 1500;
+            this.flightTime = 210;
+            this.origin = "Chicago, IL";
+            this.destination = "Phoenix, AZ";
+            this.maintenance = "Maintenance";
+            this.firstClass = 10;
+        }
+
+        public override string ToString()
+        {
+            return "Flight : " + flightNum + " | Capacity : " + seat +" passengers | FirstClass Seats : " +firstClass+ " | Range: " + range + " miles | Flight Time : " + flightTime + " minutes | FROM: " + origin + " | TO: " + destination + " | " + maintenance + " : Passed";
         }
     }
 }

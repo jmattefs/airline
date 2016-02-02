@@ -22,6 +22,19 @@ namespace Airline
     {
         public MainWindow()
         {
+
+            //SmallPlaneSW sp = new SmallPlaneSW(0, 0, 0, 0, "", "", "");
+            //MessageBox.Show(sp.ToString());
+
+            //MediumPlaneSW mp = new MediumPlaneSW(0, 0, 0, 0, "", "", "", 0);
+            //MessageBox.Show(mp.ToString());
+
+            //BigPlaneNE bp = new BigPlaneNE(0, 0, 0, 0, "", "", "", 0);
+            //MessageBox.Show(bp.ToString());
+
+
+
+
             InitializeComponent();
         }
     }
