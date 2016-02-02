@@ -56,8 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BigPlaneSW.cs" />
-    <Compile Include="loop stuff.cs" />
-    <Compile Include="Manifest.cs" />
+    <Compile Include="loopstuff.cs" />
     <Compile Include="MediumPlaneSW.cs" />
     <Compile Include="Passengers.cs" />
     <Compile Include="Read.cs" />

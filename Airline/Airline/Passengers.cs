@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Airline
 {
-    class Passengers
+    public class Passengers
     {
         Random rnd = new Random();
         string name;
@@ -14,12 +14,9 @@ namespace Airline
         int ticketNumber;
         string destination;
 
-        public Passengers(string name, int bday, int ticketNumber, string destination)
+        public Passengers()
         {
-            this.name = name;
-            this.bday = bday;
-            this.ticketNumber = ticketNumber;
-            this.destination = destination;
+           
         }
 
         public string genFirstName()

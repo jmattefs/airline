@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Airline
 {
-    class Sales
+    public class Sales
     {
         Random rnd = new Random();
         public Sales()

@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Airline
-/*{
+{
     class loop_stuff
     {
         Passengers p = new Passengers();
-         SMALL int s = p.SmallSales();
+         //SMALL 
+        int s = p.SmallSales();
         int i = 0;
         while(i < s)
         {
@@ -19,7 +20,7 @@ namespace Airline
             p.readInfoFromManifest();
             i++;
         }
-          MEDIUM  
+          //MEDIUM  
         int a = p.MediumSales1st();
         int b = p.MediumSalesCoach();
         int c = a + b;

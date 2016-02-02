@@ -7,13 +7,11 @@ using System.IO;
 
 namespace Airline
 {
-    class Write
+    public class Write
     {
         public void writeInfoToManifest(string one)
         {
-
-            File.AppendAllText(@"c:\users\joseph\desktop\manifest.txt", one + Environment.NewLine);
-            //place holder variables from rps
+            File.AppendAllText(@"c:\manifest.txt", one + Environment.NewLine);           
         }
         public void clearManifest()
         {
