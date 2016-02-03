@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Airline
+/*namespace Airline
 {
     class loop_stuff
     {
@@ -52,3 +52,4 @@ namespace Airline
 }
     }
 }
+*/

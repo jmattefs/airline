@@ -9,15 +9,74 @@ namespace Airline
 {
     public class Read
     {
-        public void readInfoFromManifest()
+        public void readInfoFromManifest11()
         {
-            string scores;
-            using (StreamReader reader = new StreamReader(@"c:\manifest.txt"))
+
+            using (StreamReader reader = new StreamReader(@"c:\manifest11.txt"))
             {
-                scores = reader.ReadToEnd();
+                reader.ReadToEnd();
                 reader.Close();
                 reader.Dispose();
-                Console.WriteLine(scores); 
+                //Console.WriteLine(scores); 
+
+            }
+        }
+        public void readInfoFromManifest12()
+        {
+
+            using (StreamReader reader = new StreamReader(@"c:\manifest12.txt"))
+            {
+                reader.ReadToEnd();
+                reader.Close();
+                reader.Dispose();
+                //Console.WriteLine(scores);
+
+            }
+        }
+        public void readInfoFromManifest101()
+        {
+
+            using (StreamReader reader = new StreamReader(@"c:\manifest101.txt"))
+            {
+                reader.ReadToEnd();
+                reader.Close();
+                reader.Dispose();
+                //Console.WriteLine(scores); 
+
+            }
+        }
+        public void readInfoFromManifest102()
+        {
+
+            using (StreamReader reader = new StreamReader(@"c:\manifest102.txt"))
+            {
+                reader.ReadToEnd();
+                reader.Close();
+                reader.Dispose();
+                //Console.WriteLine(scores); 
+            }
+        }
+        public void readInfoFromManifest1001()
+        {
+
+            using (StreamReader reader = new StreamReader(@"c:\manifest1001.txt"))
+            {
+                reader.ReadToEnd();
+                reader.Close();
+                reader.Dispose();
+                //Console.WriteLine(scores); 
+
+            }
+        }
+        public void readInfoFromManifest1002()
+        {
+
+            using (StreamReader reader = new StreamReader(@"c:\manifest1002.txt"))
+            {
+                reader.ReadToEnd();
+                reader.Close();
+                reader.Dispose();
+                //Console.WriteLine(scores); 
 
             }
         }
