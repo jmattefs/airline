@@ -22,10 +22,10 @@ namespace Airline
             int totalSales = rnd.Next(minSales2, 21);
             return totalSales;
         }
-        public int SmallRevenue()
+        public int SmallRevenue(int p)
         {
-            int sales = SmallSales();
-            int ticketPrice = 75;
+            int sales = p;
+            int ticketPrice = 100;
             int revenue = sales * ticketPrice;
             return revenue;
         }
@@ -38,9 +38,9 @@ namespace Airline
             int totalSales = rnd.Next(min1stSales2, 11);
             return totalSales;
         }
-        public int MediumRev1st()
+        public int MediumRev1st(int sale)
         {
-            int sales = MediumSales1st();
+            int sales = sale;
             int ticketPrice = 200;
             int revenue = sales * ticketPrice;
             return revenue;
@@ -54,17 +54,17 @@ namespace Airline
             int totalSales = rnd.Next(minCoachSales2, 31);
             return totalSales;
         }
-        public int MediumRevCoach()
+        public int MediumRevCoach(int sale)
         {
-            int sales = MediumSalesCoach();
+            int sales = sale;
             int ticketPrice = 100;
             int revenue = sales * ticketPrice;
             return revenue;
         }
-        public int TotalMediumRevenue()
+        public int TotalMediumRevenue(int rev1st, int coach)
         {
-            int revenue1st = MediumRev1st();
-            int revenueCoach = MediumRevCoach();
+            int revenue1st = rev1st;
+            int revenueCoach = coach;
             int totalRevenue = revenue1st + revenueCoach;
             return totalRevenue;
         }
@@ -77,9 +77,9 @@ namespace Airline
             int totalSales = rnd.Next(min1stSales2, 26);
             return totalSales;
         }
-        public int LargeRev1st()
+        public int LargeRev1st(int sale)
         {
-            int sales = LargeSales1st();
+            int sales = sale;
             int ticketPrice = 250;
             int revenue = sales * ticketPrice;
             return revenue;
@@ -92,17 +92,17 @@ namespace Airline
             int totalSales = rnd.Next(minCoachSales2, 51);
             return totalSales;
         }
-        public int LargeRevCoach()
+        public int LargeRevCoach(int sale)
         {
-            int sales = LargeSalesCoach();
+            int sales = sale;
             int ticketPrice = 125;
             int revenue = sales * ticketPrice;
             return revenue;
         }
-        public int TotalLargeRevenue()
+        public int TotalLargeRevenue(int rev1st, int coach)
         {
-            int revenue1st = LargeRev1st();
-            int revenueCoach = LargeRevCoach();
+            int revenue1st = rev1st;
+            int revenueCoach = coach;
             int totalRevenue = revenue1st + revenueCoach;
             return totalRevenue;
         }

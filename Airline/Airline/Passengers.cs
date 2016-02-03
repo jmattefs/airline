@@ -14,9 +14,10 @@ namespace Airline
         int ticketNumber;
         string destination;
 
-        public Passengers()
+        public Passengers(string name, int bday)
         {
-           
+            this.name = name;
+            this.bday = bday;
         }
 
         public string genFirstName()

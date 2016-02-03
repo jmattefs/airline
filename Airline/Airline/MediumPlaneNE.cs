@@ -10,7 +10,7 @@ namespace Airline
     {
         int firstClass;
 
-        public MediumPlaneNE(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance, int firstClass) : base(flightNum, seat, range, flightTime, origin, destination, maintenance)
+        public MediumPlaneNE(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance, int firstClass, string schedule) : base(flightNum, seat, range, flightTime, origin, destination, maintenance, schedule)
         {
             this.flightNum = 102;
             this.seat = 40;
@@ -20,11 +20,12 @@ namespace Airline
             this.destination = "Chicago, IL";
             this.maintenance = "Maintenance";
             this.firstClass = 10;
+            this.schedule = "Departure Time : 1:00PM | Arrival Time : 4:30PM ";
         }
 
         public override string ToString()
         {
-            return "Flight : " + flightNum + " | Capacity : " + seat + " passengers | FirstClass Seats : " + firstClass + " | Range: " + range + " miles | Flight Time : " + flightTime + " minutes | FROM: " + origin + " | TO: " + destination + " | " + maintenance + " : Passed";
+            return "Flight : " + flightNum + " | Capacity : " + seat + " passengers | Range: " + range + " miles | Flight Time : " + flightTime + " minutes | From " + origin + " TO " + destination + " | " + maintenance + " : Passed | " + schedule;
         }
     }
 }

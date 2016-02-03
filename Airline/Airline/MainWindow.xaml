@@ -5,6 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Airline"
         mc:Ignorable="d"
-        Title="MainWindow" Height="399" Width="525">
-    <Grid x:Name="SmallFlight"/>
+        Title="MainWindow" Height="453" Width="754">
+    <Grid x:Name="SmallFlight">
+        <Button x:Name="button_f1001" Content="Flight-1001" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="button_f1001_Click"/>
+        <Button x:Name="button_f1001_sell" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,10,0,0" VerticalAlignment="Top" Width="75" Click="button_f1001_sell_Click"/>
+        <TextBox x:Name="soldf1001" HorizontalAlignment="Left" Height="23" Margin="112,30,0,0" TextWrapping="Wrap" Text="Tickets Sold" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="textBoxf1000" HorizontalAlignment="Left" Height="99" Margin="224,11,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="489"/>
+        <Button x:Name="button_f1002" Content="Flight-1002" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="75" Click="button_f1002_Click"/>
+        <Button x:Name="button3" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,67,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.053,2.1" Click="button3_Click"/>
+        <TextBox x:Name="soldf1002" HorizontalAlignment="Left" Height="23" Margin="112,87,0,0" TextWrapping="Wrap" Text="Tickets Sold" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button_f101" Content="Flight-101" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="75" Click="button_f101_Click"/>
+        <TextBox x:Name="soldf101" HorizontalAlignment="Left" Height="23" Margin="112,166,0,0" TextWrapping="Wrap" Text="Tickets Sold" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="textBoxf100" HorizontalAlignment="Left" Height="105" Margin="224,146,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="489"/>
+        <Button x:Name="button_f102" Content="Flight-102" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.707,2.05" Click="button_f102_Click"/>
+        <Button x:Name="button7" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,208,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.387,1" Click="button7_Click"/>
+        <TextBox x:Name="soldf102" HorizontalAlignment="Left" Height="23" Margin="112,228,0,0" TextWrapping="Wrap" Text="Tickets Sold" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.522"/>
+        <Button x:Name="button_f11" Content="Flight-11" HorizontalAlignment="Left" Margin="10,306,0,0" VerticalAlignment="Top" Width="75" Click="button_f11_Click"/>
+        <Button x:Name="button9" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,306,0,0" VerticalAlignment="Top" Width="75" Click="button9_Click"/>
+        <TextBox x:Name="soldf11" HorizontalAlignment="Left" Height="23" Margin="112,326,0,0" TextWrapping="Wrap" Text="Tickets Sold" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button_f12" Content="Flight-12" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="75" Click="button_f12_Click"/>
+        <Button x:Name="button11" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,360,0,0" VerticalAlignment="Top" Width="75" Click="button11_Click"/>
+        <TextBox x:Name="soldf12" HorizontalAlignment="Left" Height="19" Margin="112,380,0,0" TextWrapping="Wrap" Text="Tickets Sold" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button5" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,146,0,0" VerticalAlignment="Top" Width="75" Click="button5_Click"/>
+        <TextBox x:Name="textBoxf10" HorizontalAlignment="Left" Height="93" Margin="224,306,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="489" RenderTransformOrigin="0.225,-0.13"/>
+    </Grid>
 </Window>

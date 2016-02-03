@@ -15,8 +15,9 @@ namespace Airline
         public string origin;
         public string destination;
         public string maintenance;
+        public string schedule;
 
-        public Airplane(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance)
+        public Airplane(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance, string schedule)
         {
             this.flightNum = flightNum;
             this.seat = seat;
@@ -25,6 +26,7 @@ namespace Airline
             this.origin = origin;
             this.destination = destination;
             this.maintenance = maintenance;
+            this.schedule = schedule;
         }
     }
 }

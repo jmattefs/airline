@@ -9,7 +9,7 @@ namespace Airline
     class BigPlaneNE : Airplane
     {
         int firstClass;
-        public BigPlaneNE(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance, int firstclass) : base(flightNum, seat, range, flightTime, origin, destination, maintenance)
+        public BigPlaneNE(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance, int firstclass, string schedule) : base(flightNum, seat, range, flightTime, origin, destination, maintenance, schedule)
         {
             this.flightNum = 12;
             this.seat = 75;
@@ -19,11 +19,12 @@ namespace Airline
             this.destination = "New York, NY";
             this.maintenance = "Maintenance";
             this.firstClass = 25;
+            this.schedule = "Departure Time : 1:00PM | Arrival Time : 6:30PM ";
         }
 
         public override string ToString()
         {
-            return "Flight : " + flightNum + " | Capacity : " + seat + " passengers | FirstClass Seats : " + firstClass + " | Range: " + range + " miles | Flight Time : " + flightTime + " minutes | FROM: " + origin + " | TO: " + destination + " | " + maintenance + " : Passed";
+            return "Flight : " + flightNum + " | Capacity : " + seat + " passengers | Range: " + range + " miles | Flight Time : " + flightTime + " minutes | From " + origin + " TO " + destination + " | " + maintenance + " : Passed | " + schedule;
         }
     }
 }

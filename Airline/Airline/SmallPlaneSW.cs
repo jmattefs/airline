@@ -8,7 +8,7 @@ namespace Airline
 {
     public class SmallPlaneSW : Airplane
     {
-        public SmallPlaneSW(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance) : base(flightNum, seat, range, flightTime, origin, destination, maintenance)
+        public SmallPlaneSW(int flightNum, int seat, int range, int flightTime, string origin, string destination, string maintenance, string schedule) : base(flightNum, seat, range, flightTime, origin, destination, maintenance, schedule)
         {
             this.flightNum = 1001;
             this.seat = 20;
@@ -17,11 +17,12 @@ namespace Airline
             this.origin = "Milwaukee WI";
             this.destination = "Atlanta GA";
             this.maintenance = "Maintenance";
+            this.schedule = "Departure Time : 6:30AM | Arrival Time : 8:00AM ";
         }
 
         public override string ToString()
         {
-            return "Flight : " + flightNum + ", Capacity : " + seat + " passengers, Range: " + range + " miles, Flight Time : " + flightTime + " minutes, From " + origin + " TO " + destination + ", " + maintenance + " : Passed";
+            return "Flight : " + flightNum + " | Capacity : " + seat + " passengers | Range: " + range + " miles | Flight Time : " + flightTime + " minutes | From " + origin + " TO " + destination + " | " + maintenance + " : Passed | " + schedule;
         }
     }
 }
