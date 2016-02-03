@@ -24,7 +24,7 @@ namespace Airline
 
         public override string ToString()
         {
-            return "Flight : " + flightNum + " | Capacity : " + seat + " passengers | Range: " + range + " miles | Flight Time : " + flightTime + " minutes | From " + origin + " TO " + destination + " | " + maintenance + " : Passed | " + schedule;
+            return "Flight : " + flightNum + " | Capacity : " + seat + " passengers | First Class Seats: " + firstClass + " | Range: " + range + " miles | Flight Time : " + flightTime + " minutes | From " + origin + " TO " + destination + " | " + maintenance + " : Passed | " + schedule;
         }
     }
 }
