@@ -79,7 +79,7 @@ namespace Airline
         {
             string name = genFullName();
             string bday = genBday();
-            return String.Format("{0, -20} | {1, 10}", "|" + name, bday + "|");
+            return String.Format("{0, -20}  | {1, 9}", "|" + name, bday + "|");
         }
     }
 }
