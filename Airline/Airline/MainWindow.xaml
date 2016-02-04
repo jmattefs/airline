@@ -5,22 +5,124 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Airline"
         mc:Ignorable="d"
-        Title="MainWindow" Height="453" Width="754">
+        Title="MainWindow" Height="470" Width="754">
     <Grid x:Name="SmallFlight">
-        <Button x:Name="button_f1001" Content="Flight-1001" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="button_f1001_Click"/>
-        <Button x:Name="button_f1001_sell" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,10,0,0" VerticalAlignment="Top" Width="75" Click="button_f1001_sell_Click"/>
-        <TextBox x:Name="textBoxf1000" HorizontalAlignment="Left" Height="99" Margin="224,11,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="489"/>
-        <Button x:Name="button_f1002" Content="Flight-1002" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="75" Click="button_f1002_Click"/>
-        <Button x:Name="button3" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,67,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.053,2.1" Click="button3_Click"/>
-        <Button x:Name="button_f101" Content="Flight-101" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="75" Click="button_f101_Click"/>
-        <TextBox x:Name="textBoxf100" HorizontalAlignment="Left" Height="105" Margin="224,146,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="489"/>
-        <Button x:Name="button_f102" Content="Flight-102" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.707,2.05" Click="button_f102_Click"/>
-        <Button x:Name="button7" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,208,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.387,1" Click="button7_Click"/>
-        <Button x:Name="button_f11" Content="Flight-11" HorizontalAlignment="Left" Margin="10,306,0,0" VerticalAlignment="Top" Width="75" Click="button_f11_Click"/>
-        <Button x:Name="button9" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,306,0,0" VerticalAlignment="Top" Width="75" Click="button9_Click"/>
-        <Button x:Name="button_f12" Content="Flight-12" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="75" Click="button_f12_Click"/>
-        <Button x:Name="button11" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,360,0,0" VerticalAlignment="Top" Width="75" Click="button11_Click"/>
-        <Button x:Name="button5" Content="Sell Tickets" HorizontalAlignment="Left" Margin="112,146,0,0" VerticalAlignment="Top" Width="75" Click="button5_Click"/>
-        <TextBox x:Name="textBoxf10" HorizontalAlignment="Left" Height="93" Margin="224,306,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="489" RenderTransformOrigin="0.225,-0.13"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEEF9FD" Offset="0.136"/>
+                <GradientStop Color="#FF49CDFF" Offset="0.607"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="button_f1001" HorizontalAlignment="Left" Margin="23,39,0,0" VerticalAlignment="Top" Width="97" Click="button_f1001_Click" Cursor="Hand" BorderBrush="RoyalBlue" FontFamily="Segoe UI Semibold" Background="White" BorderThickness="2" Height="20">
+            <Button.Content>
+                <Grid>
+                    <Image Source="airplane.png" RenderTransformOrigin="2.484,0.602" Margin="-36,-3,32,-5.6" Width="36" Height="23" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                    <TextBlock Text="Flight-1001" RenderTransformOrigin="0.534,0.398" Margin="0,-2,-28,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="60"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="button_f1001_sell" Content="Sell Tickets" HorizontalAlignment="Left" Margin="131,38,0,0" VerticalAlignment="Top" Width="75" Click="button_f1001_sell_Click" Cursor="Hand" BorderBrush="#FF49CDFF" Height="20">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC0EDFE" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.441"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textBoxf1000" HorizontalAlignment="Left" Height="130" Margin="224,15,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="500" BorderBrush="Black" BorderThickness="2" FontFamily="Segoe UI Light" FontSize="13.333" FontWeight="Bold">
+            <TextBox.SelectionBrush>
+                <SolidColorBrush Color="Black"/>
+            </TextBox.SelectionBrush>
+        </TextBox>
+        <Button x:Name="button_f1002" HorizontalAlignment="Left" Margin="23,99,0,0" VerticalAlignment="Top" Height="20" Width="97" Click="button_f1002_Click" Cursor="Hand" FontFamily="Segoe UI Semibold" Background="White" BorderBrush="RoyalBlue" BorderThickness="2">
+            <Button.Content>
+                <Grid>
+                    <Image Source="airplane.png" Margin="-36,-3,32,-5.6" Width="36" Height="23"/>
+                    <TextBlock Text="Flight-1002" Margin="0,-2,-28,0"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+        <Button x:Name="button3" Content="Sell Tickets" HorizontalAlignment="Left" Margin="131,99,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.053,2.1" Click="button3_Click" Cursor="Hand" BorderBrush="#FF7CDBFE" Height="20">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7CDBFE" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.441"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button_f101" HorizontalAlignment="Left" Margin="23,179,0,0" VerticalAlignment="Top" Width="97" Click="button_f101_Click" Cursor="Hand" FontFamily="Segoe UI Semibold" BorderBrush="RoyalBlue" Background="White" BorderThickness="2" Height="20" RenderTransformOrigin="0.992,1">
+            <Button.Content>
+                <Grid>
+                    <Image Source="airplane.png" Margin="-36,-3,32,-5.6" Width="36" Height="23"/>
+                    <TextBlock Text="Flight-101" Margin="0,-2,-28,0"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+        <TextBox x:Name="textBoxf100" HorizontalAlignment="Left" Height="130" Margin="224,159,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="500" BorderBrush="Black" BorderThickness="2" FontFamily="Segoe UI Light" FontSize="13.333" FontWeight="Bold" SelectionBrush="Black"/>
+        <Button x:Name="button_f102" HorizontalAlignment="Left" Margin="23,244,0,0" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.707,2.05" Click="button_f102_Click" Cursor="Hand" FontFamily="Segoe UI Semibold" Background="White" BorderBrush="RoyalBlue" BorderThickness="2">
+            <Button.Content>
+                <Grid>
+                    <Image Source="airplane.png" Margin="-36,-3,32,-5.6" Width="36" Height="23"/>
+                    <TextBlock Text="Flight-102" Margin="0,-2,-28,0"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+        <Button x:Name="button7" Content="Sell Tickets" HorizontalAlignment="Left" Margin="131,242,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.387,1" Click="button7_Click" Cursor="Hand" BorderBrush="#FF49CDFF" Height="22">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF49CDFF" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.441"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button_f11" HorizontalAlignment="Left" Margin="23,327,0,0" VerticalAlignment="Top" Width="97" Click="button_f11_Click" Cursor="Hand" FontFamily="Segoe UI Semibold" BorderBrush="RoyalBlue" Background="White" BorderThickness="2">
+            <Button.Content>
+                <Grid>
+                    <Image Source="airplane.png" Margin="-36,-3,32,-5.6" Width="36" Height="23"/>
+                    <TextBlock Text="Flight-11" Margin="0,-2,-28,0"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+        <Button x:Name="button9" Content="Sell Tickets" HorizontalAlignment="Left" Margin="131,327,0,0" VerticalAlignment="Top" Width="75" Click="button9_Click" Cursor="Hand" BorderBrush="#FF49CDFF" Height="20">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF49CDFF" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.441"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button_f12"  HorizontalAlignment="Left" Margin="23,380,0,0" VerticalAlignment="Top" Width="97" Click="button_f12_Click" Cursor="Hand" FontFamily="Segoe UI Semibold" Background="White" BorderBrush="RoyalBlue" BorderThickness="2,1" Height="20">
+            <Button.Content>
+                <Grid>
+                    <Image Source="airplane.png" Margin="-36,-3,32,-5.6" Width="36" Height="23"/>
+                    <TextBlock Text="Flight-12" Margin="0,-2,-28,0"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+        <Button x:Name="button11" Content="Sell Tickets" HorizontalAlignment="Left" Margin="131,380,0,0" VerticalAlignment="Top" Width="75" Click="button11_Click" Cursor="Hand" BorderBrush="#FF49CDFF" Height="20">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF49CDFF" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.441"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button5" Content="Sell Tickets" HorizontalAlignment="Left" Margin="131,178,0,0" VerticalAlignment="Top" Width="75" Click="button5_Click" Cursor="Hand" BorderBrush="#FF49CDFF" Height="21">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF49CDFF" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.441"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textBoxf10" HorizontalAlignment="Left" Height="130" Margin="224,301,0,0" TextWrapping="Wrap" Text="Flight Information" VerticalAlignment="Top" Width="500" RenderTransformOrigin="0.225,-0.13" BorderBrush="Black" BorderThickness="2" FontFamily="Segoe UI Light" FontSize="13.333" Padding="0" FontWeight="Bold">
+            <TextBox.SelectionBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.SelectionBrush>
+        </TextBox>
     </Grid>
 </Window>
