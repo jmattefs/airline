@@ -62,6 +62,7 @@
     <Compile Include="Sales.cs" />
     <Compile Include="SmallPlaneNE.cs" />
     <Compile Include="SmallPlaneSW.cs" />
+    <Compile Include="ViewModel.cs" />
     <Compile Include="Write.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
