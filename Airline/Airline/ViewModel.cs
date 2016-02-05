@@ -20,7 +20,7 @@ namespace Airline
             Passengers p = new Passengers("", 0);
             Write write = new Write();
             Read read = new Read();
-            string sold = "Tickets Sold | ";
+            string sold = "Tickets Sold" + Environment.NewLine;
             string msg = sold + "Flight-1001 Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
@@ -36,7 +36,7 @@ namespace Airline
                 read.readInfoFromManifest1001();
                 i++;
             }
-            return t.ToString();
+            return t.ToString().Trim('(', ')');
         }
         public string SPne()
         {
@@ -50,7 +50,7 @@ namespace Airline
             Passengers p = new Passengers("", 0);
             Write write = new Write();
             Read read = new Read();
-            string sold = "Tickets Sold | ";
+            string sold = "Tickets Sold" + Environment.NewLine;
             string msg = sold + "Flight-1002 Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
@@ -66,7 +66,7 @@ namespace Airline
                 read.readInfoFromManifest1002();
                 i++;
             }
-            return t.ToString();
+            return t.ToString().Trim('(', ')');
         }
         public string MPsw()
         {
@@ -83,7 +83,7 @@ namespace Airline
             int amount;
             int amountFirst;
             int amountCoach;
-            string sold = "Tickets Sold | ";
+            string sold = "Tickets Sold" + Environment.NewLine;
             string msg = sold + "Flight-101 Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
@@ -102,7 +102,7 @@ namespace Airline
                 read.readInfoFromManifest101();
                 i++;
             }
-            return t.ToString();
+            return t.ToString().Trim('(', ')');
         }
         public string MPne()
         {
@@ -119,7 +119,7 @@ namespace Airline
             int amount;
             int amountFirst;
             int amountCoach;
-            string sold = "Tickets Sold | ";
+            string sold = "Tickets Sold" + Environment.NewLine;
             string msg = sold + "Flight-102 Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
@@ -138,7 +138,7 @@ namespace Airline
                 read.readInfoFromManifest102();
                 i++;
             }
-            return t.ToString();
+            return t.ToString().Trim('(', ')');
         }
         public string BPsw()
         {
@@ -155,7 +155,7 @@ namespace Airline
             int amount;
             int amountFirst;
             int amountCoach;
-            string sold = "Tickets Sold | ";
+            string sold = "Tickets Sold" + Environment.NewLine;
             string msg = sold + "Flight-11 Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
@@ -174,7 +174,7 @@ namespace Airline
                 read.readInfoFromManifest11();
                 i++;
             }
-            return t.ToString();
+            return t.ToString().Trim('(', ')');
         }
         public string BPne()
         {
@@ -191,7 +191,7 @@ namespace Airline
             int amount;
             int amountFirst;
             int amountCoach;
-            string sold = "Tickets Sold | ";
+            string sold = "Tickets Sold" + Environment.NewLine;
             string msg = sold + "Flight-12 Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
@@ -210,7 +210,7 @@ namespace Airline
                 read.readInfoFromManifest12();
                 i++;
             }
-            return t.ToString();
+            return t.ToString().Trim('(', ')');
         }
     }
 

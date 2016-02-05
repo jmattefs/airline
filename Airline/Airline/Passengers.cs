@@ -11,8 +11,7 @@ namespace Airline
         Random rnd = new Random();
         string name;
         int bday;
-        int ticketNumber;
-        string destination;
+        
 
         public Passengers(string name, int bday)
         {
