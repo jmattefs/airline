@@ -22,7 +22,7 @@ namespace Airline
 
         public override string ToString()
         {
-            return "Flight : " + flightNum + Environment.NewLine + "Capacity : " + seat + " passengers" + Environment.NewLine + "Range: " + range + " miles" + Environment.NewLine + "Flight Time : " + flightTime + " minutes" + Environment.NewLine + "From " + origin + " TO " + destination + Environment.NewLine + maintenance + ": Passed" + Environment.NewLine + schedule;
+            return "-------Flight-" + flightNum + "------------------------------------" + Environment.NewLine + "Capacity : " + seat + " passengers" + Environment.NewLine + "Range: " + range + " miles" + Environment.NewLine + "Flight Time : " + flightTime + " minutes" + Environment.NewLine + "From " + origin + " TO " + destination + Environment.NewLine + maintenance + ": Passed" + Environment.NewLine + schedule;
         }
     }
 }

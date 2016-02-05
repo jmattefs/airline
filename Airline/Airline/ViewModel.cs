@@ -20,14 +20,16 @@ namespace Airline
             Passengers p = new Passengers("", 0);
             Write write = new Write();
             Read read = new Read();
-            string sold = "Tickets Sold" + Environment.NewLine;
-            string msg = sold + "Flight-1001 Total Revenue : $";
+            string sold = " Tickets Sold";
+            string msg = "-------Flight-1001------------------------------------" + Environment.NewLine+ "Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
             string b;
+            string c;
             a = sales.SmallSales().ToString();
             b = msg + sales.SmallRevenue(Int32.Parse(a));
-            Tuple<string, string> t = new Tuple<string, string>(a, b);
+            c = b + Environment.NewLine + a + sold;
+   
             write.clearManifest1001();
             write.manifestHeader1001();
             while (i < Int32.Parse(a))
@@ -36,7 +38,7 @@ namespace Airline
                 read.readInfoFromManifest1001();
                 i++;
             }
-            return t.ToString().Trim('(', ')');
+            return c;
         }
         public string SPne()
         {
@@ -50,14 +52,16 @@ namespace Airline
             Passengers p = new Passengers("", 0);
             Write write = new Write();
             Read read = new Read();
-            string sold = "Tickets Sold" + Environment.NewLine;
-            string msg = sold + "Flight-1002 Total Revenue : $";
+            string sold = " Tickets Sold";
+            string msg = "-------Flight-1002-----------------------------------" + Environment.NewLine+ "Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
             string b;
+            string c;
             a = sales.SmallSales().ToString();
             b = msg + sales.SmallRevenue(Int32.Parse(a));
-            Tuple<string, string> t = new Tuple<string, string>(a, b);
+            c = b + Environment.NewLine + a + sold;
+            
             write.clearManifest1002();
             write.manifestHeader1002();
             while (i < Int32.Parse(a))
@@ -66,7 +70,7 @@ namespace Airline
                 read.readInfoFromManifest1002();
                 i++;
             }
-            return t.ToString().Trim('(', ')');
+            return c;
         }
         public string MPsw()
         {
@@ -83,17 +87,19 @@ namespace Airline
             int amount;
             int amountFirst;
             int amountCoach;
-            string sold = "Tickets Sold" + Environment.NewLine;
-            string msg = sold + "Flight-101 Total Revenue : $";
+            string sold = " Tickets Sold";
+            string msg = "-------Flight-101-------------------------------------" + Environment.NewLine+ "Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
             string b;
+            string c;
             amountFirst = sales.MediumRev1st(sales.MediumSales1st());
             amountCoach = sales.MediumRevCoach(sales.MediumSalesCoach());
             amount = sales.MediumSalesCoach() + sales.MediumSales1st();
             a = amount.ToString();
             b = msg + sales.TotalMediumRevenue(amountFirst, amountCoach);
-            Tuple<string, string> t = new Tuple<string, string>(a, b);
+            c = b + Environment.NewLine + a + sold;
+            
             write.clearManifest101();
             write.manifestHeader101();
             while (i < Int32.Parse(a))
@@ -102,7 +108,7 @@ namespace Airline
                 read.readInfoFromManifest101();
                 i++;
             }
-            return t.ToString().Trim('(', ')');
+            return c;
         }
         public string MPne()
         {
@@ -119,17 +125,19 @@ namespace Airline
             int amount;
             int amountFirst;
             int amountCoach;
-            string sold = "Tickets Sold" + Environment.NewLine;
-            string msg = sold + "Flight-102 Total Revenue : $";
+            string sold = " Tickets Sold";
+            string msg =  "-------Flight-102-------------------------------------"+Environment.NewLine+ "Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
             string b;
+            string c;
             amountFirst = sales.MediumRev1st(sales.MediumSales1st());
             amountCoach = sales.MediumRevCoach(sales.MediumSalesCoach());
             amount = sales.MediumSalesCoach() + sales.MediumSales1st();
             a = amount.ToString();
             b = msg + sales.TotalMediumRevenue(amountFirst, amountCoach);
-            Tuple<string, string> t = new Tuple<string, string>(a, b);
+            c = b + Environment.NewLine + a + sold;
+            
             write.clearManifest102();
             write.manifestHeader102();
             while (i < Int32.Parse(a))
@@ -138,7 +146,7 @@ namespace Airline
                 read.readInfoFromManifest102();
                 i++;
             }
-            return t.ToString().Trim('(', ')');
+            return c;
         }
         public string BPsw()
         {
@@ -155,17 +163,19 @@ namespace Airline
             int amount;
             int amountFirst;
             int amountCoach;
-            string sold = "Tickets Sold" + Environment.NewLine;
-            string msg = sold + "Flight-11 Total Revenue : $";
+            string sold = " Tickets Sold";
+            string msg = "-------Flight-11--------------------------------------" + Environment.NewLine+ "Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
             string b;
+            string c;
             amountFirst = sales.LargeRev1st(sales.LargeSales1st());
             amountCoach = sales.LargeRevCoach(sales.LargeSalesCoach());
             amount = sales.LargeSalesCoach() + sales.LargeSales1st();
             a = amount.ToString();
             b = msg + sales.TotalLargeRevenue(amountFirst, amountCoach);
-            Tuple<string, string> t = new Tuple<string, string>(a, b);
+            c = b + Environment.NewLine + a + sold;
+            
             write.clearManifest11();
             write.manifestHeader11();
             while (i < Int32.Parse(a))
@@ -174,7 +184,7 @@ namespace Airline
                 read.readInfoFromManifest11();
                 i++;
             }
-            return t.ToString().Trim('(', ')');
+            return c;
         }
         public string BPne()
         {
@@ -191,17 +201,19 @@ namespace Airline
             int amount;
             int amountFirst;
             int amountCoach;
-            string sold = "Tickets Sold" + Environment.NewLine;
-            string msg = sold + "Flight-12 Total Revenue : $";
+            string sold = " Tickets Sold";
+            string msg = "-------Flight-12--------------------------------------" + Environment.NewLine+ "Total Revenue : $";
             string generate = p.genPerson().ToString();
             string a;
             string b;
+            string c;
             amountFirst = sales.LargeRev1st(sales.LargeSales1st());
             amountCoach = sales.LargeRevCoach(sales.LargeSalesCoach());
             amount = sales.LargeSalesCoach() + sales.LargeSales1st();
             a = amount.ToString();
             b = msg + sales.TotalLargeRevenue(amountFirst, amountCoach);
-            Tuple<string, string> t = new Tuple<string, string>(a, b);
+            c = b + Environment.NewLine + a + sold;
+            
             write.clearManifest12();
             write.manifestHeader12();
             while (i < Int32.Parse(a))
@@ -210,7 +222,7 @@ namespace Airline
                 read.readInfoFromManifest12();
                 i++;
             }
-            return t.ToString().Trim('(', ')');
+            return c;
         }
     }
 

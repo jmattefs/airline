@@ -81,6 +81,7 @@ namespace Airline
             header = "|--------Name---------|---DOB---|";
             File.WriteAllText(@".\manifest1001.txt", header1 + Environment.NewLine + header + Environment.NewLine);
         }
+       
         public void clearManifest11()
         {
             File.WriteAllText(@".\manifest11.txt", string.Empty);
