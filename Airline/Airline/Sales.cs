@@ -9,10 +9,6 @@ namespace Airline
     public class Sales
     {
         Random rnd = new Random();
-        public Sales()
-        {
-
-        }
         public int SmallSales()
         {
             int planeCapacity = 20;

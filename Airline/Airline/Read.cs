@@ -17,7 +17,6 @@ namespace Airline
                 reader.ReadToEnd();
                 reader.Close();
                 reader.Dispose();
-                //Console.WriteLine(scores); 
 
             }
         }
@@ -29,7 +28,6 @@ namespace Airline
                 reader.ReadToEnd();
                 reader.Close();
                 reader.Dispose();
-                //Console.WriteLine(scores);
 
             }
         }
@@ -41,7 +39,6 @@ namespace Airline
                 reader.ReadToEnd();
                 reader.Close();
                 reader.Dispose();
-                //Console.WriteLine(scores); 
 
             }
         }
@@ -53,7 +50,6 @@ namespace Airline
                 reader.ReadToEnd();
                 reader.Close();
                 reader.Dispose();
-                //Console.WriteLine(scores); 
             }
         }
         public void readInfoFromManifest1001()
@@ -64,7 +60,6 @@ namespace Airline
                 reader.ReadToEnd();
                 reader.Close();
                 reader.Dispose();
-                //Console.WriteLine(scores); 
 
             }
         }
@@ -76,8 +71,6 @@ namespace Airline
                 reader.ReadToEnd();
                 reader.Close();
                 reader.Dispose();
-                //Console.WriteLine(scores); 
-
             }
         }
 
